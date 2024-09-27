@@ -26,29 +26,29 @@ class Navbar:
                     cls="avatar",
                 ),
                 Div(
-                    Span("Abdelmalek Djamaa", cls="text-lg font-medium"),
-                    P("Data scientist", cls="text-gray-500"),
+                    Span("Abdelmalek Djamaa", cls="text-lg font-semibold"),
+                    P("Data scientist", cls="text-gray-400"),
                 ),
                 cls="flex items-start flex-col w-full gap-4",
             ),
             Div(
                 A(
-                    Span("Home", cls="font-medium"),
+                    Span("Home", cls="font-semibold"),
                     href="/home",
                     cls="flex items-center py-1 gap-2 " + text_colors[0],
                 ),
                 A(
-                    Span("Projects", cls="font-medium"),
+                    Span("Projects", cls="font-semibold"),
                     href="/projects",
                     cls="flex items-center py-1 gap-2 " + text_colors[1],
                 ),
                 A(
-                    Span("Services", cls="font-medium"),
+                    Span("Services", cls="font-semibold"),
                     href="/services",
                     cls="flex items-center py-1 gap-2 " + text_colors[2],
                 ),
                 A(
-                    Span("Contact", cls="font-medium"),
+                    Span("Contact", cls="font-semibold"),
                     href="/contact",
                     cls="flex items-center py-1 gap-2 " + text_colors[3],
                 ),
