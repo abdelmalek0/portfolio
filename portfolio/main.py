@@ -6,17 +6,19 @@ from home import Home
 from projects import Projects
 from services import Services
 from contact import Contact
-from constants import meta, icon, tailwindcss, daisyui, css, inter
+from constants import meta, icon, tailwindcss, daisyui, css, inter, icons
 
 app = FastHTML(
-    debug=True, hdrs=(meta, icon, tailwindcss, daisyui, css, inter), default_hdrs=False
+    debug=True,
+    hdrs=(meta, icon, tailwindcss, daisyui, css, inter, icons),
+    default_hdrs=False,
 )
 rt = app.route
 
 
 @rt("/")
 @rt("/home")
-def get_home():
+async def get_home():
     return (
         Title("Abdelmalek Djamaa - Data scientist, Software Engineer, & Solopreneur"),
         Home(),
@@ -24,7 +26,7 @@ def get_home():
 
 
 @rt("/projects")
-def get_projects():
+async def get_projects():
     return (
         Title("Projects | Abdelmalek Djamaa"),
         Projects(),
@@ -32,7 +34,7 @@ def get_projects():
 
 
 @rt("/services")
-def get_services():
+async def get_services():
     return (
         Title("Services | Abdelmalek Djamaa"),
         Services(),
@@ -40,7 +42,7 @@ def get_services():
 
 
 @rt("/contact")
-def get_contact():
+async def get_contact():
     return (
         Title("Contact | Abdelmalek Djamaa"),
         Contact(),

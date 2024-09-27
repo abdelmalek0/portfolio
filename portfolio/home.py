@@ -40,7 +40,7 @@ def Home():
                         cls="text-gray-400",
                     ),
                     P(
-                        "I've been developing and deploying Computer vision systems for a while.",
+                        "I've been developing/deploying 👓 Computer vision systems for the past 3 years.",
                         cls="text-gray-400",
                     ),
                     P(

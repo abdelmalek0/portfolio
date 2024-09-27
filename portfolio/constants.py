@@ -6,6 +6,7 @@ daisyui = Link(
     rel="stylesheet", href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.css"
 )
 css = Style(open("static/css/main.css").read())
+icons = Script(src="https://kit.fontawesome.com/91207e5ccc.js", crossorigin="anonymous")
 
 # Metadata
 icon = Link(
