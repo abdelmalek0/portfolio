@@ -44,11 +44,7 @@ def Home():
                         cls="text-gray-500",
                     ),
                     P(
-                        "I've been coding in 🐍 Python primarily for over 4 years.",
-                        cls="text-gray-500",
-                    ),
-                    P(
-                        "🌱 I’m currently working on RAG systems and learning Advanced concepts.",
+                        "🌱 I'm currently working on RAG systems and learning Advanced concepts.",
                         cls="text-gray-500",
                     ),
                     cls="flex flex-col gap-1",
@@ -59,25 +55,42 @@ def Home():
                 Span("Skills", cls="text-lg font-medium"),
                 Span("AI", cls="font-medium text-gray-400"),
                 Div(
-                    *[Div(skill, cls="badge badge-primary") for skill in AI_SKILLS],
+                    *[
+                        Div(skill, cls="badge badge-primary badge-md")
+                        for skill in AI_SKILLS
+                    ],
                     cls="flex flex-row flex-wrap gap-2",
                 ),
                 Span("Languages", cls="font-medium text-gray-400"),
                 Div(
-                    *[Div(skill, cls="badge badge-success") for skill in LANGUAGES],
+                    *[
+                        Div(skill, cls="badge badge-success badge-md")
+                        for skill in LANGUAGES
+                    ],
                     cls="flex flex-row flex-wrap gap-2",
                 ),
                 Span("Libraries", cls="font-medium text-gray-400"),
                 Div(
-                    *[Div(skill, cls="badge badge-info") for skill in LIBRARIES],
+                    *[
+                        Div(skill, cls="badge badge-info badge-md")
+                        for skill in LIBRARIES
+                    ],
                     cls="flex flex-row flex-wrap gap-2",
                 ),
                 Span("Others", cls="font-medium text-gray-400"),
                 Div(
-                    *[Div(skill, cls="badge badge-secondary") for skill in OTHERS],
+                    *[
+                        Div(skill, cls="badge badge-secondary badge-md")
+                        for skill in OTHERS
+                    ],
                     cls="flex flex-row flex-wrap gap-2",
                 ),
                 cls="flex flex-col gap-4",
+            ),
+            Div(
+                Span("Hobbies & Interests", cls="text-lg font-medium"),
+                Div(Span("⚽ Football", cls="badge"), Span("🎞️ Tv shows", cls="badge")),
+                cls="flex flex-col gap-2",
             ),
             cls="flex flex-col h-full w-full py-12 px-8 gap-12",
         ),
