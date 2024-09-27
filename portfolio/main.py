@@ -26,7 +26,7 @@ def get_home():
 @rt("/projects")
 def get_projects():
     return (
-        Title("Abdelmalek Djamaa - Data scientist, Software Engineer, & Solopreneur"),
+        Title("Projects | Abdelmalek Djamaa"),
         Projects(),
     )
 
@@ -34,7 +34,7 @@ def get_projects():
 @rt("/services")
 def get_services():
     return (
-        Title("Abdelmalek Djamaa - Data scientist, Software Engineer, & Solopreneur"),
+        Title("Services | Abdelmalek Djamaa"),
         Services(),
     )
 
@@ -42,7 +42,7 @@ def get_services():
 @rt("/contact")
 def get_contact():
     return (
-        Title("Abdelmalek Djamaa - Data scientist, Software Engineer, & Solopreneur"),
+        Title("Contact | Abdelmalek Djamaa"),
         Contact(),
     )
 
