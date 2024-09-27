@@ -17,7 +17,6 @@ rt = app.route
 
 
 @rt("/")
-@rt("/home")
 async def get_home():
     return (
         Title("Abdelmalek Djamaa - Data scientist, Software Engineer, & Solopreneur"),

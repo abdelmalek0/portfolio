@@ -34,7 +34,7 @@ class Navbar:
             Div(
                 A(
                     Span("Home", cls="font-semibold"),
-                    href="/home",
+                    href="/",
                     cls="flex items-center py-1 gap-2 " + text_colors[0],
                 ),
                 A(

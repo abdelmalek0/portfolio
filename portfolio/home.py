@@ -24,6 +24,7 @@ LIBRARIES = [
     "Scikit-learn",
     "Flask",
     "Langchain",
+    "FastHTML",
 ]
 OTHERS = ["Git", "Github", "SQL", "SQlite", "Redis"]
 
