@@ -3,10 +3,10 @@ from fasthtml.common import Title, serve
 import uvicorn
 
 from home import Home
-from constants import css, tailwindcss, meta, daisyui, inter
+from constants import meta, icon, tailwindcss, daisyui, css, inter
 
 app = FastHTML(
-    debug=True, hdrs=(meta, tailwindcss, daisyui, css, inter), default_hdrs=False
+    debug=True, hdrs=(meta, icon, tailwindcss, daisyui, css, inter), default_hdrs=False
 )
 rt = app.route
 
