@@ -3,6 +3,9 @@ from fasthtml.common import Title, serve
 import uvicorn
 
 from home import Home
+from projects import Projects
+from services import Services
+from contact import Contact
 from constants import meta, icon, tailwindcss, daisyui, css, inter
 
 app = FastHTML(
@@ -12,10 +15,35 @@ rt = app.route
 
 
 @rt("/")
-def get():
+@rt("/home")
+def get_home():
     return (
         Title("Abdelmalek Djamaa - Data scientist, Software Engineer, & Solopreneur"),
         Home(),
+    )
+
+
+@rt("/projects")
+def get_projects():
+    return (
+        Title("Abdelmalek Djamaa - Data scientist, Software Engineer, & Solopreneur"),
+        Projects(),
+    )
+
+
+@rt("/services")
+def get_services():
+    return (
+        Title("Abdelmalek Djamaa - Data scientist, Software Engineer, & Solopreneur"),
+        Services(),
+    )
+
+
+@rt("/contact")
+def get_contact():
+    return (
+        Title("Abdelmalek Djamaa - Data scientist, Software Engineer, & Solopreneur"),
+        Contact(),
     )
 
 
