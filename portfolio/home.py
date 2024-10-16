@@ -90,7 +90,12 @@ def Home():
             ),
             Div(
                 Span("Hobbies & Interests", cls="text-lg font-semibold"),
-                Div(Span("⚽ Football", cls="badge"), Span("🎞️ Tv shows", cls="badge")),
+                Div(
+                    Span("📗 Books", cls="badge"),
+                    Span("⚽ Football", cls="badge"),
+                    Span("🎞️ Tv shows", cls="badge"),
+                    cls="flex flex-row gap-2",
+                ),
                 cls="flex flex-col gap-2",
             ),
             cls="flex flex-col h-full w-full py-16 px-8 gap-12",
