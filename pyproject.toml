@@ -6,7 +6,7 @@ authors = ["abdelmalek0 <djamaa.abdelmalek98@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 python-fasthtml = "^0.6.8"
 uvicorn = "^0.30.6"
 

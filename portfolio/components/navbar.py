@@ -1,6 +1,7 @@
 from fasthtml.common import Div, Span, Img, A, P
 from dataclasses import dataclass
 
+from constants import icon
 
 @dataclass
 class Navbar:
@@ -19,7 +20,7 @@ class Navbar:
                 Div(
                     Div(
                         Img(
-                            src="https://media.licdn.com/dms/image/v2/D4E03AQHFQVrjjbEZew/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691311567568?e=1732752000&v=beta&t=xZyiOnLrVfZ3qdFewaqmkAUPk1qA39AtJE4N2gqnwjs"
+                            src=icon.href
                         ),
                         cls="w-16 rounded-full",
                     ),

@@ -11,7 +11,7 @@ icons = Script(src="https://kit.fontawesome.com/91207e5ccc.js", crossorigin="ano
 # Metadata
 icon = Link(
     rel="icon",
-    href="https://media.licdn.com/dms/image/v2/D4E03AQHFQVrjjbEZew/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691311567568?e=1732752000&v=beta&t=xZyiOnLrVfZ3qdFewaqmkAUPk1qA39AtJE4N2gqnwjs",
+    href="https://media.licdn.com/dms/image/v2/D4D03AQHnqC_0RuqD9w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731701414066?e=1737590400&v=beta&t=CKocGlzDlMtFfRvdYcYL078R_i9Z9beA0O-TPLkLSYc",
 )
 inter = Link(href="https://fonts.googleapis.com/css?family=Inter", rel="stylesheet")
 meta = Meta(name="viewport", content="width=device-width, initial-scale=1")
