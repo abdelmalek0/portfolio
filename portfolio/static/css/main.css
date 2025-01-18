@@ -9,14 +9,14 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     /* prevent scrolling */
-    font-family: Inter;
+    font-family: Inter, sans-serif;
 }
 
-body>div {
+body > div {
     height: calc(100vh - 2rem);
-    /* subtract the padding (5px top + 5px bottom) */
+    /* subtract the padding (2rem top + 2rem bottom) */
     width: calc(100vw - 2rem);
-    /* subtract the padding (5px left + 5px right) */
+    /* subtract the padding (2rem left + 2rem right) */
     margin: 0;
     padding: 2rem;
     display: flex;
@@ -24,4 +24,45 @@ body>div {
     justify-content: space-between;
     align-items: stretch;
     box-sizing: border-box;
+}
+
+/* Small devices (portrait phones, less than 600px) */
+@media (max-width: 600px) {
+    html,
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    body > div {
+        padding: 1rem; /* Reduce padding for small screens */
+        height: calc(100vh - 1rem); /* Adjust height based on padding */
+        width: calc(100vw - 1rem); /* Adjust width based on padding */
+        flex-direction: column; /* Retain column layout */
+    }
+}
+
+/* Medium devices (landscape phones, tablets, less than 900px) */
+@media (max-width: 900px) {
+    html,
+    body {
+        font-size: 16px; /* Slightly larger font size for medium devices */
+    }
+
+    body > div {
+        padding: 1.5rem; /* Moderate padding for medium screens */
+        height: calc(100vh - 1.5rem); /* Adjust height based on padding */
+        width: calc(100vw - 1.5rem); /* Adjust width based on padding */
+    }
+}
+
+/* Large devices (desktops, tablets in landscape, 900px and above) */
+@media (min-width: 900px) {
+    html,
+    body {
+        font-size: 18px; /* Default font size for larger screens */
+    }
+
+    body > div {
+        padding: 2rem; /* Default padding */
+    }
 }

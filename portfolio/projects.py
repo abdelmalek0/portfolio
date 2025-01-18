@@ -1,6 +1,7 @@
-from fasthtml.common import H1, H2, Div, Img, P, Span, A, Figure
-from components.navbar import Navbar
-from components.card import Card
+from fasthtml.common import Div
+from fasthtml.common import Span
+from portfolio.components.card import Card
+from portfolio.components.navbar import Navbar
 
 
 projects = [

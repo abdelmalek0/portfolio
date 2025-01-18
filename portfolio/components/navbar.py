@@ -1,7 +1,11 @@
-from fasthtml.common import Div, Span, Img, A, P
 from dataclasses import dataclass
 
-from constants import icon
+from fasthtml.common import A
+from fasthtml.common import Div
+from fasthtml.common import Img
+from fasthtml.common import P
+from fasthtml.common import Span
+from portfolio.constants import icon
 
 @dataclass
 class Navbar:

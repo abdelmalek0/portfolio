@@ -1,12 +1,16 @@
 from fasthtml import FastHTML
-from fasthtml.common import Title, serve
-import uvicorn
-
-from home import Home
-from projects import Projects
-from services import Services
-from contact import Contact
-from constants import meta, icon, tailwindcss, daisyui, css, inter, icons
+from fasthtml.common import Title
+from portfolio.constants import css
+from portfolio.constants import daisyui
+from portfolio.constants import icon
+from portfolio.constants import icons
+from portfolio.constants import inter
+from portfolio.constants import meta
+from portfolio.constants import tailwindcss
+from portfolio.contact import Contact
+from portfolio.home import Home
+from portfolio.projects import Projects
+from portfolio.services import Services
 
 app = FastHTML(
     debug=True,
@@ -46,5 +50,3 @@ async def get_contact():
         Title("Contact | Abdelmalek Djamaa"),
         Contact(),
     )
-
-

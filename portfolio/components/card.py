@@ -1,6 +1,10 @@
-from fasthtml.common import Div, H2, P, A
 from dataclasses import dataclass
 from typing import List
+
+from fasthtml.common import A
+from fasthtml.common import Div
+from fasthtml.common import H2
+from fasthtml.common import P
 
 
 @dataclass

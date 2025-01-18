@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.11"
 python-fasthtml = "^0.6.8"
 uvicorn = "^0.30.6"
+sqlite-minutils = "^4.0.3"
+reorder-python-imports = "^3.14.0"
 
 
 [build-system]

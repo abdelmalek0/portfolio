@@ -1,5 +1,5 @@
-from fasthtml.common import H1, Div, Img, P, Span, A
-from components.navbar import Navbar
+from fasthtml.common import Div
+from portfolio.components.navbar import Navbar
 
 
 def Services():

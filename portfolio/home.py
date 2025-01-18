@@ -1,5 +1,7 @@
-from fasthtml.common import H1, Div, Img, P, Span, A
-from components.navbar import Navbar
+from fasthtml.common import Div
+from fasthtml.common import P
+from fasthtml.common import Span
+from portfolio.components.navbar import Navbar
 
 AI_SKILLS = [
     "Image classification",
@@ -54,26 +56,26 @@ def Home():
             ),
             Div(
                 Span("Skills", cls="text-lg font-semibold"),
-                Span("🦿 AI", cls="font-medium text-gray-200"),
-                Div(
-                    *[
-                        Div(skill, cls="badge bg-gray-500 text-gray-200 badge-md")
-                        for skill in AI_SKILLS
-                    ],
-                    cls="flex flex-row flex-wrap gap-2",
-                ),
                 Span("🌐 Languages", cls="font-medium text-gray-200"),
                 Div(
                     *[
-                        Div(skill, cls="badge bg-gray-500 text-gray-200 badge-md")
+                        Div(skill, cls="badge bg-gray-700 text-gray-200 badge-md")
                         for skill in LANGUAGES
+                    ],
+                    cls="flex flex-row flex-wrap gap-2",
+                ),
+                Span("🦿 AI", cls="font-medium text-gray-200"),
+                Div(
+                    *[
+                        Div(skill, cls="badge bg-gray-700 text-gray-200 badge-md")
+                        for skill in AI_SKILLS
                     ],
                     cls="flex flex-row flex-wrap gap-2",
                 ),
                 Span("⚙️ Libraries", cls="font-medium text-gray-200"),
                 Div(
                     *[
-                        Div(skill, cls="badge bg-gray-500 text-gray-200 badge-md")
+                        Div(skill, cls="badge bg-gray-700 text-gray-200 badge-md")
                         for skill in LIBRARIES
                     ],
                     cls="flex flex-row flex-wrap gap-2",
@@ -81,7 +83,7 @@ def Home():
                 Span("🛟 Others", cls="font-medium text-gray-200"),
                 Div(
                     *[
-                        Div(skill, cls="badge bg-gray-500 text-gray-200 badge-md")
+                        Div(skill, cls="badge bg-gray-700 text-gray-200 badge-md")
                         for skill in OTHERS
                     ],
                     cls="flex flex-row flex-wrap gap-2",

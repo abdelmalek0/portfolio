@@ -1,4 +1,7 @@
-from fasthtml.common import Script, Style, Meta, Link
+from fasthtml.common import Link
+from fasthtml.common import Meta
+from fasthtml.common import Script
+from fasthtml.common import Style
 
 # Libraries
 tailwindcss = Script(src="https://cdn.tailwindcss.com")
@@ -11,7 +14,7 @@ icons = Script(src="https://kit.fontawesome.com/91207e5ccc.js", crossorigin="ano
 # Metadata
 icon = Link(
     rel="icon",
-    href="https://media.licdn.com/dms/image/v2/D4D03AQHnqC_0RuqD9w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731701414066?e=1737590400&v=beta&t=CKocGlzDlMtFfRvdYcYL078R_i9Z9beA0O-TPLkLSYc",
+    href="https://pbs.twimg.com/profile_images/1736776347899351040/jfVfEDen_400x400.jpg",
 )
 inter = Link(href="https://fonts.googleapis.com/css?family=Inter", rel="stylesheet")
 meta = Meta(name="viewport", content="width=device-width, initial-scale=1")
