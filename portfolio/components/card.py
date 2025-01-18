@@ -23,7 +23,7 @@ class Card:
                     Div("NEW", cls="badge badge-secondary") if self.is_new else (),
                     cls="card-title",
                 ),
-                P(self.description),
+                P(self.description, cls="text-sm"),
                 Div(
                     *[Div(tag, cls="badge badge-accent") for tag in self.tags],
                     cls="card-actions justify-end",
