@@ -59,5 +59,5 @@ class Navbar:
                 ),
                 cls="flex flex-col h-full w-full px-2 py-8 gap-4",
             ),
-            cls="flex flex-col h-full w-64 px-2 py-12 gap-8",
+            cls="flex flex-col h-full w-64 px-2 pt-12 gap-8",
         )

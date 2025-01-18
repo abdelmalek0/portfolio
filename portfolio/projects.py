@@ -40,9 +40,9 @@ def Projects():
             ),
             Div(
                 *projects,
-                cls="flex flex-row flex-wrap gap-2 ",
+                cls="flex flex-col gap-2 pb-2",
             ),
-            cls="flex flex-col h-full w-full py-16 px-8 gap-12",
+            cls="flex flex-col w-full py-8 sm:py-16 px-8 gap-12",
         ),
-        cls="flex flex-row mx-auto min-h-screen w-full max-w-5xl gap-20",
+        cls="flex flex-col sm:flex-row mx-auto min-h-screen w-full max-w-5xl gap-4 sm:gap-20 overflow-auto",
     )
