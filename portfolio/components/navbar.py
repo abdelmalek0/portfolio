@@ -1,11 +1,12 @@
 from dataclasses import dataclass
 
+from constants import icon
 from fasthtml.common import A
 from fasthtml.common import Div
 from fasthtml.common import Img
 from fasthtml.common import P
 from fasthtml.common import Span
-from portfolio.constants import icon
+
 
 @dataclass
 class Navbar:
@@ -23,9 +24,7 @@ class Navbar:
             Div(
                 Div(
                     Div(
-                        Img(
-                            src=icon.href
-                        ),
+                        Img(src=icon.href),
                         cls="w-16 rounded-full",
                     ),
                     cls="avatar",

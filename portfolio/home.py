@@ -1,7 +1,7 @@
+from components.navbar import Navbar
 from fasthtml.common import Div
 from fasthtml.common import P
 from fasthtml.common import Span
-from portfolio.components.navbar import Navbar
 
 AI_SKILLS = [
     "Image classification",

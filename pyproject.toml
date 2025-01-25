@@ -11,6 +11,7 @@ python-fasthtml = "^0.6.8"
 uvicorn = "^0.30.6"
 sqlite-minutils = "^4.0.3"
 reorder-python-imports = "^3.14.0"
+pre-commit = "^4.1.0"
 
 
 [build-system]

@@ -1,7 +1,7 @@
+from components.card import Card
+from components.navbar import Navbar
 from fasthtml.common import Div
 from fasthtml.common import Span
-from portfolio.components.card import Card
-from portfolio.components.navbar import Navbar
 
 
 projects = [

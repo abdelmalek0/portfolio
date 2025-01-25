@@ -1,16 +1,16 @@
+from constants import css
+from constants import daisyui
+from constants import icon
+from constants import icons
+from constants import inter
+from constants import meta
+from constants import tailwindcss
+from contact import Contact
 from fasthtml import FastHTML
 from fasthtml.common import Title
-from portfolio.constants import css
-from portfolio.constants import daisyui
-from portfolio.constants import icon
-from portfolio.constants import icons
-from portfolio.constants import inter
-from portfolio.constants import meta
-from portfolio.constants import tailwindcss
-from portfolio.contact import Contact
-from portfolio.home import Home
-from portfolio.projects import Projects
-from portfolio.services import Services
+from home import Home
+from projects import Projects
+from services import Services
 
 app = FastHTML(
     debug=True,

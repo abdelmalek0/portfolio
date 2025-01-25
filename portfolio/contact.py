@@ -1,9 +1,11 @@
+from components.navbar import Navbar
 from fasthtml.common import A
 from fasthtml.common import Div
 from fasthtml.common import I
 from fasthtml.common import P
 from fasthtml.common import Span
-from portfolio.components.navbar import Navbar
+
+
 def Contact():
     return Div(
         Navbar(index=3),
