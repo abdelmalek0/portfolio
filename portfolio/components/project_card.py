@@ -8,7 +8,7 @@ from fasthtml.common import P
 
 
 @dataclass
-class Card:
+class ProjectCard:
     title: str
     description: str
     src: str

@@ -1,25 +1,25 @@
-from components.card import Card
 from components.navbar import Navbar
+from components.project_card import ProjectCard
 from fasthtml.common import Div
 from fasthtml.common import Span
 
 
 projects = [
-    Card(
+    ProjectCard(
         "PausePal",
         "PausePal is a simple and intuitive desktop application designed to improve productivity and well-being by encouraging regular breaks.",
         "https://github.com/abdelmalek0/pausepal.git",
         ["Python"],
         True,
     ),
-    Card(
+    ProjectCard(
         "Portfolio",
         "Portfolio is a simple web application designed to showcase my work and skills and present the services I provide.",
         "https://github.com/abdelmalek0/portfolio.git",
         ["Python", "FastHTML"],
         False,
     ),
-    Card(
+    ProjectCard(
         "Arise",
         "Arise is a tool designed to simplify the setup process for new Python projects, especially for developers who prefer working with modern tools like Poetry for dependency management.",
         "https://github.com/abdelmalek0/arise.git",
